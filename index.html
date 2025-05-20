@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบตรวจสอบพันธะหอสมุด</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="path/to/your/favicon.png">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1496692052106-d37cb66ab80c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Kanit', sans-serif;
+        }
+        .icon-container {
+            position: relative;
+        }
+        .icon-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            z-index: -1;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            margin-top: auto;
+            background-color: rgba(255, 255, 255, 0.471);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="container mx-auto my-10">
+            <div class="mx-auto max-w-lg">
+                <h1 class="text-4xl font-bold mb-8 text-center text-white">เลือกการตรวจสอบพันธะ</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <a href="fine-check.php" class="block bg-white bg-opacity-80 p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
+                        <div class="flex items-center justify-center mb-4 icon-container">
+                            <i class="fas fa-book text-5xl text-teal-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-center text-gray-800">ค้างค่าปรับ</h2>
+                    </a>
+                    <a href="overdue-check.php" class="block bg-white bg-opacity-80 p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
+                        <div class="flex items-center justify-center mb-4 icon-container">
+                            <i class="fas fa-user text-5xl text-teal-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-center text-gray-800">หนังสือเกินกำหนด</h2>
+                    </a>
+                    <a href="borrow-check.php" class="block bg-white bg-opacity-80 p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
+                        <div class="flex items-center justify-center mb-4 icon-container">
+                            <i class="fas fa-chart-bar text-5xl text-teal-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-center text-gray-800">ยืมหนังในระบบ</h2>
+                    </a>
+                    <a href="#" class="block bg-white bg-opacity-80 p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
+                        <div class="flex items-center justify-center mb-4 icon-container">
+                            <i class="fas fa-clock text-5xl text-teal-600"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-center text-gray-800">coming soon</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 SRU Central Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
